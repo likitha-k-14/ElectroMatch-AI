@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #05070c;
+  color: #f8fafc;
+}
+
+.light body,
+.light .app-shell {
+  background: #eef3f8;
+  color: #08111f;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 4%, rgba(20, 184, 166, .22), transparent 32rem),
+    radial-gradient(circle at 86% 14%, rgba(99, 102, 241, .22), transparent 30rem),
+    linear-gradient(145deg, #05070c 0%, #0b1220 46%, #08090d 100%);
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(10, 18, 31, .58);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+}
+
+.light .glass {
+  border-color: rgba(15, 23, 42, .12);
+  background: rgba(255, 255, 255, .72);
+}
+
+.light .text-white {
+  color: #0f172a !important;
+}
+
+.light .text-slate-300,
+.light .text-slate-400 {
+  color: #334155 !important;
+}
+
+.light .bg-slate-950\/55,
+.light .bg-slate-950\/50,
+.light .bg-slate-950\/60,
+.light .bg-slate-950\/70 {
+  background-color: rgba(255, 255, 255, .72) !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .08);
+  padding: .85rem 1rem;
+  color: white;
+  outline: none;
+}
+
+.light .input {
+  background: rgba(255, 255, 255, .78);
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, .14);
+}
+
+.input:focus {
+  border-color: rgba(94, 234, 212, .75);
+  box-shadow: 0 0 0 4px rgba(45, 212, 191, .12);
+}
+
+.input option {
+  color: #0f172a;
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(255, 255, 255, .08);
+  padding: .7rem .9rem;
+  color: #cbd5e1;
+  font-size: .875rem;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.chip:hover,
+.chip-active {
+  background: #5eead4;
+  color: #020617;
+}
