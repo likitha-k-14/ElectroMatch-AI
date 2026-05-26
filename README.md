@@ -88,6 +88,6 @@ The recommendation engine lives in `server/src/services/recommendationEngine.js`
 - `POST /api/auth/register`
 - `POST /api/auth/login`
 
-## Production Notes
+## Development Note
 
-For a production deployment, replace the mock chat intent parser with a real LLM call, move in-memory wishlist/auth fallback to MongoDB-backed persistence, add request validation, and serve the built React app behind the API or a CDN.
+This project was developed with the assistance of AI tools for ideation and code generation. The implementation, customization, debugging, integration, and testing were performed independently.
